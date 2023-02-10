@@ -12,7 +12,7 @@ const NavComponent = () => {
     <div>
         <Navbar bg="light" expand={false}>
           <Container fluid>
-            <Navbar.Brand href="/">Salvador Martínez</Navbar.Brand>
+            <Navbar.Brand href="#">Salvador Martínez</Navbar.Brand>
             <Navbar.Toggle aria-controls={'offcanvasNavbar'} />
             <Navbar.Offcanvas
               id={'offcanvasNavbar'}
