@@ -12,7 +12,7 @@ const NavComponent = () => {
     <div>
         <Navbar bg="light" expand={false}>
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">Salvador Martínez</Navbar.Brand>
             <Navbar.Toggle aria-controls={'offcanvasNavbar'} />
             <Navbar.Offcanvas
               id={'offcanvasNavbar'}
@@ -21,24 +21,26 @@ const NavComponent = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={'offcanvasNavbarLabel'}>
-                  Offcanvas
+                  Salvador Martínez
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link href="#">Home</Nav.Link>
+                  <Nav.Link href="#projects">Projects</Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="Info"
                     id={'offcanvasNavbarDropdown'}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
+                    <NavDropdown.Item href="#about">
+                      About
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#prices">
+                      Prices
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
+                    <NavDropdown.Item href="#contact">
+                      Contact
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
