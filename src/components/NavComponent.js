@@ -44,6 +44,7 @@ const NavComponent = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
+                <div><br/></div>
                 <Form className="d-flex">
                   <Form.Control
                     type="search"
