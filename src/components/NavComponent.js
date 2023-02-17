@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -6,8 +5,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import React, {useState} from 'react';
+import Modal1 from './Modal1'
+import './Modal.css'
 
 const NavComponent = () => {
+
+  const [openModal1, setOpenModal1] = useState(false)
+
+
   return (
     <div>
         <Navbar bg="light" expand={false}>
@@ -26,8 +32,8 @@ const NavComponent = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#about">About</Nav.Link>
+                  <button className='modalBtn1' onClick={() => setOpenModal1(true)} >BMI Calculator</button>
+                  <Modal1 open={openModal1} onClose={()=> setOpenModal1(false)} />
                   <NavDropdown
                     title="Info"
                     id={'offcanvasNavbarDropdown'}
