@@ -110,6 +110,8 @@
   .img1 {
     width: 100%;
     height: auto;
+    position: fixed;
+    top: 450px;
   }
 
   .closeBtn1 {
