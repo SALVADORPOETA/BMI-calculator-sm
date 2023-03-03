@@ -40,7 +40,7 @@
   width: 100%;
   z-index: -1000;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -97,26 +97,18 @@
   color: white;
 }
 
-@media screen and (max-width: 600px) {
-  .modalContainer1 {
-    flex-direction: column;
-    top: 8%;
-    left: 0%;
-    transform: none;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .img1 {
-    display: none;
-  }
-
-  .closeBtn1 {
-    color: black;
-    top: 9%;
-    right: 5%;
-  } 
-
+.center {
+  margin: auto;
+  margin-left: -5px;
+  margin-bottom: 0px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  background: gray;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
 .container {
@@ -127,7 +119,6 @@
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 button {
   padding: 0.4rem 1rem;
@@ -184,26 +175,39 @@ input {
   margin-bottom: 10px;
 }
 
-.center {
-  margin: auto;
-  margin-left: -5px;
-  margin-bottom: 0px;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-  text-align: center;
-  display: grid;
-  background: gray;
-  border-radius: 10px;
-  color: #ffffff;
+label {
+  margin-top: 10px;
 }
 
-.h3message {
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  margin: auto;
-  padding: auto;
-  color: #ffffff;
+@media screen and (max-width: 600px) {
+  .modalContainer1 {
+    flex-direction: column;
+    top: 8%;
+    left: 0%;
+    transform: none;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .closeBtn1 {
+    color: black;
+    top: 9%;
+    right: 5%;
+  } 
+
+  label {
+    margin-right: 4%;
+  }
+
+  .center {
+    margin-left: auto;
+  }
+
 }
+
+
+

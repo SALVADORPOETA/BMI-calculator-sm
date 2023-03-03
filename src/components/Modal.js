@@ -59,8 +59,11 @@ const Modal1 = ({open, onClose}) => {
                   <div>
                     <button className="buttonV" type="submit" >Submit</button>
                     <button className="buttonV" onClick={reset} type="submit" >Clear</button>
-                    <div className="h3message" >
-                      <h3>Your BMI is: {bmi}</h3>
+                    <div>
+                      <h3>
+                        Your BMI is:
+                      </h3>  
+                        {bmi}
                       <p>{message}</p>
                     </div>
                   </div>
