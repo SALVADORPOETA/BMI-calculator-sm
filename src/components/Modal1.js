@@ -30,9 +30,7 @@ const Modal1 = ({open, onClose}) => {
         document.getElementById('message').innerHTML = ''
     }
 
-
     if (!open) return null
-
     return (
     <div onClick={onClose} className='overlay1' >
         <div onClick={(e)=> {

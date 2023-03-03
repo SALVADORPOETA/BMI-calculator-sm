@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import React, {useState} from 'react';
-import Modal1 from './Modal1'
+import Modal1 from './Modal'
 import './Modal.css'
 
 const NavComponent = () => {
