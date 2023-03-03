@@ -13,7 +13,7 @@ const Modal1 = ({open, onClose}) => {
 
     if (weight !== '' && height !== '') {
       let bmi = (weight / (height * height) * 703)
-      setBmi(bmi.toFixed(1))
+      setBmi(bmi.toFixed(2))
 
       // Logic for message
 

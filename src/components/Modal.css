@@ -111,6 +111,10 @@
   color: #ffffff;
 }
 
+.center p {
+  margin-top: 20px;
+}
+
 .container {
   padding: 1rem;
   max-width: 300px;
