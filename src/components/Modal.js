@@ -12,8 +12,6 @@ const Modal1 = ({open, onClose}) => {
     event.preventDefault()
 
     if (weight !== '' && height !== '') {
-    //   alert('Please enter a valid weight and height')
-    // } else {
       let bmi = (weight / (height * height) * 703)
       setBmi(bmi.toFixed(1))
 
