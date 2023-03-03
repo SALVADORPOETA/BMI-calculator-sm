@@ -73,8 +73,8 @@ const Modal1 = ({open, onClose}) => {
           </div>
         </div>
       </div>
-      </div>
-    )
-  }
+    </div>
+  )
+}
 
 export default Modal1
